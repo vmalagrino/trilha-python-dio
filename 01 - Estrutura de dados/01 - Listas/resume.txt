@@ -1,0 +1,4 @@
+Python é uma linguagem orientada à objetos, tudo é objeto.
+Uma lista armazena todo tipo de objeto, int, float, str
+
+declaramos como "list" ou com "[]"

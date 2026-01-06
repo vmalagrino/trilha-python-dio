@@ -1,3 +1,5 @@
+# método pop pilha - LIFO (last in, first out), retira o último elemento adicionado
+
 linguagens = ["python", "js", "c", "java", "csharp"]
 
 print(linguagens.pop())  # csharp
