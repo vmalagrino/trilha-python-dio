@@ -1,0 +1,14 @@
+# / parâmetros antes da barra só podem ser passados por posição
+# * parâmetros após o asterisco só podem ser passados por nome
+
+# somente posição = antes "/"
+# posição ou nome = após "/" e antes do asterisco "*"
+# somente nome = após "*"
+
+def criar_carro(modelo, ano, placa, /, cor, *, marca, motor, combustivel):
+    print(modelo, ano, placa, cor, marca, motor, combustivel)
+
+
+criar_carro("Palio", 1999, "ABC-1234", "Azul", marca="Fiat", motor="1.0", combustivel="Gasolina") # válido
+criar_carro("Palio", 1999, "ABC-1234", cor="Azul", marca="Fiat", motor="1.0", combustivel="Gasolina") # válido
+# criar_carro(modelo="Palio", ano=1999, placa="ABC-1234", cor="Azul", marca="Fiat", motor="1.0", combustivel="Gasolina")  # inválido
